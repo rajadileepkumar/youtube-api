@@ -1,0 +1,11 @@
+//if you require can you add other formatts
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) { 
+    @font-face {
+      font-family: quote($font-name);
+      src: url($file-name + '.ttf');
+      font-weight: $weight;
+      font-style: $style;
+    }
+}
+@include font-face('Montserrat-Medium','./../fonts/Montserrat-Medium','normal','normal');
+@include font-face('Montserrat-Regular','./../fonts/Montserrat-Regular','normal','normal');

@@ -1,0 +1,77 @@
+.movie-list{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    flex: 1 1;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 1060px;
+    margin-top: 30px;
+    li{
+        margin: 0 15px;
+        list-style-type: none;
+        flex-basis: 30%;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        .movie-card-image{
+            line-height: 0;
+            height: 367px;
+            @media(max-width: 768px){
+                width: 100%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+        .movie-card-body{
+            background: #fff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 18px 18px 24px 18px;
+            margin: 0;
+            h6{
+                margin: 0;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: 'Montserrat-Medium';
+                font-weight: 500;
+            }
+            .movie-card-details {
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 14px;
+                    font-family: 'Montserrat-Medium';
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+                .movie-card-movie{
+                    font-size: 14px;
+                    font-family: 'Montserrat-Regular';
+                    text-transform: capitalize;
+                }
+                .movie-card-year{
+                    font-size: 14px;
+                    font-family: 'Montserrat-Regular';
+                    text-transform: capitalize;
+                }
+            }
+        }
+        &:hover{
+            // transform: scale(1.03);
+            transition:5s ease-in-out;
+        }
+        @media(max-width: 768px){
+            flex-basis: auto;
+        }
+    }
+    @media(max-width: 768px){
+        width: 100%;
+    }
+}
